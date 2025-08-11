@@ -1,2 +1,14 @@
 # exercicios-python
-Repositório dedicado a exercícios práticos de Python, abordando desde conceitos básicos até tópicos avançados. O objetivo é reforçar a lógica de programação e desenvolver habilidades na linguagem, com exemplos comentados e organizados por nível de dificuldade.  📂 Conteúdo  Sintaxe básica e tipos de dados  Estruturas condicionais e loops  Funções e módulos  Manipulação de strings e listas  Dicionários e conjuntos  Tratamento de erros (exceptions)  Exercícios de lógica e algoritmos  Projetos simples para fixação  🎯 Objetivo Fornecer um espaço de estudo contínuo, onde cada exercício serve como prática para consolidar conhecimentos e preparar para desafios mais complexos no desenvolvimento com Python.
+Repositório dedicado a exercícios práticos de Python, abordando desde conceitos básicos até tópicos avançados. O objetivo é reforçar a lógica de programação e desenvolver habilidades na linguagem, com exemplos comentados e organizados por nível de dificuldade.  
+
+📂 **Conteúdo**
+* Sintaxe básica e tipos de dados  
+* Estruturas condicionais e loops  
+* Funções e módulos  
+* Manipulação de strings e listas  
+* Dicionários e conjuntos  
+* Tratamento de erros (exceptions)  
+* Exercícios de lógica e algoritmos  
+* Projetos simples para fixação  
+
+🎯 *Objetivo Fornecer um espaço de estudo contínuo, onde cada exercício serve como prática para consolidar conhecimentos e preparar para desafios mais complexos no desenvolvimento com Python.*
