@@ -15,3 +15,45 @@ O que o programa deve fazer:
 - Imprimir o resultado: O programa deve imprimir o grupo de palavras que formam o anagrama mais longo e a quantidade de palavras neste grupo.
 """
 
+from collections import defaultdict
+
+def encontrar_anagrama_mais_longo(nome_arquivo):
+    """
+    Lê um arquivo de texto e encontra o grupo de anagramas mais longo.
+
+    Args:
+        nome_arquivo (str): O nome do arquivo de texto com uma palavra por linha.
+    """
+    grupos_de_anagramas = defaultdict(list)
+
+    # 1. Lê o arquivo e agrupa as palavras
+    try:
+        with open(nome_arquivo, 'r', encoding='utf-8') as arquivo:
+            for linha in arquivo:
+                palavra = linha.strip().lower()  # Remove espaços e converte para minúsculas
+                if not palavra:
+                    continue  # Pula linhas vazias
+
+                # Cria a chave do anagrama ordenando as letras
+                chave = "".join(sorted(palavra))
+                
+                # Adiciona a palavra original ao grupo correspondente
+                grupos_de_anagramas[chave].append(palavra)
+    except FileNotFoundError:
+        print(f"Erro: O arquivo '{nome_arquivo}' não foi encontrado.")
+        return
+
+    # 2. Encontra o grupo de anagramas mais longo
+    grupo_mais_longo = []
+    
+    for chave in grupos_de_anagramas:
+        if len(grupos_de_anagramas[chave]) > len(grupo_mais_longo):
+            grupo_mais_longo = grupos_de_anagramas[chave]
+
+    # 3. Imprime o resultado
+    if grupo_mais_longo:
+        print("O grupo de anagramas mais longo é:")
+        print(grupo_mais_longo)
+        print(f"Quantidade de palavras: {len(grupo_mais_longo)}")
+    else:
+        print("Nenhum grupo de anagramas encontrado.")
