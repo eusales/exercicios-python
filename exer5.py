@@ -15,15 +15,6 @@ Lembre-se de remover espaços e considerar a palavra em letras minúsculas para 
 Uma maneira de inverter uma string em Python é usando o slicing de string: palavra[::-1].
 
 """
-while True:
+while True
 
-    palavra = input("Qual é a palavra: ")
-
-    inverter = palavra[::-1]
-
-    if (palavra.lower() == inverter.lower()):
-        print("A palavra é um Palíndromo.")
-
-    else:
-        print("A palavra não é um Palíndromo.")
-    
+    palavra 
